@@ -18,13 +18,15 @@
   <div class="container">
     <h1>Cron Health Checker</h1>
     <p>Verify your cron jobs are actually running — enter cron expression and last run time, get health status with next expected run</p>
-    <a href="#" class="cta" id="buyBtn">Get Started — 2</a>
+    <a href="#" class="cta" id="buyBtn" data-price="12">Get Started — $12</a>
   </div>
   <script>
-    const CHECKOUT_URL = window.__CHECKOUT_URL || null;
-    document.getElementById('buyBtn').addEventListener('click', (e) => {
+    const buyBtn = document.getElementById('buyBtn');
+    const price = buyBtn ? buyBtn.dataset.price : null;
+    buyBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      if (CHECKOUT_URL) window.open(CHECKOUT_URL, '_blank');
+      const checkoutUrl = window.__CHECKOUT_URL || null;
+      if (checkoutUrl) window.open(checkoutUrl, '_blank');
       else alert('Store coming soon! Contact @OtonomUniverseCreator on Telegram.');
     });
   </script>
