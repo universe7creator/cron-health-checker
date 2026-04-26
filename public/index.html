@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cron Health Checker</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #667eea, #764ba2); min-height: 100vh; color: #333; }
+    .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; text-align: center; color: white; }
+    h1 { font-size: 3rem; margin-bottom: 20px; }
+    p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 40px; }
+    .cta { display: inline-block; background: white; color: #667eea; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1.1rem; }
+    .cta:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Cron Health Checker</h1>
+    <p>Verify your cron jobs are actually running — enter cron expression and last run time, get health status with next expected run</p>
+    <a href="#" class="cta" id="buyBtn">Get Started — 2</a>
+  </div>
+  <script>
+    const CHECKOUT_URL = window.__CHECKOUT_URL || null;
+    document.getElementById('buyBtn').addEventListener('click', (e) => {
+      e.preventDefault();
+      if (CHECKOUT_URL) window.open(CHECKOUT_URL, '_blank');
+      else alert('Store coming soon! Contact @OtonomUniverseCreator on Telegram.');
+    });
+  </script>
+</body>
+</html>

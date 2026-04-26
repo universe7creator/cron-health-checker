@@ -1,0 +1,14 @@
+{
+  "name": "cron-health-checker",
+  "version": "1.0.0",
+  "description": "Verify your cron jobs are actually running — enter cron expression and last run time, get health status with next expected run",
+  "main": "api/process.js",
+  "scripts": {
+    "dev": "node dev-server.js",
+    "vercel-build": "echo 'Build complete'"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

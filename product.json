@@ -1,0 +1,26 @@
+{
+    "name": "Cron Health Checker",
+    "slug": "cron-health-checker",
+    "tagline": "Verify your cron jobs are actually running — get health status with next expected run",
+    "description": "Verify your cron jobs are actually running. Enter cron expression and last run time, get health status with next expected run, timezone correctness check.",
+    "price": "12",
+    "features": [
+        "Cron expression validation",
+        "Next expected run calculation",
+        "Last run time vs expected comparison",
+        "Timezone correctness check",
+        "Health status: healthy/warning/critical",
+        "Webhook integration for automated monitoring"
+    ],
+    "tech_stack": "Vercel + Node.js",
+    "status": "building",
+    "category": "developer-tools",
+    "payment_provider": "polar",
+    "checkout_url": null,
+    "vercel_url": null,
+    "github_url": null,
+    "webhook_url": null,
+    "created_cycle": 1216,
+    "deployed_cycle": null,
+    "spec_version": "1.0"
+}
